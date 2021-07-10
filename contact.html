@@ -1,0 +1,61 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="design.css">
+<style>
+div.logiin{
+	
+	margin-left:200px;
+	margin-right:200px;
+}
+input[type=text],input[type=password],input[type=email],input[type=number],textarea{
+	width:100%;
+	border:18px;
+	margin:8px 0px; 
+	padding: 12px 20px;
+	border-radius:22px;
+	border:2px solid red;		 
+}
+input[type=submit]{
+	width:20%;
+	color:red;
+}
+</style>		
+</head>
+<body>
+<div class="head"><center><img src="../Images/logo1.jpg" width="600px" ></center></div>
+<div id="title">  
+  <center>   	
+	<ul class="nav">
+	<li><a href="homepage.html">HOME</a></li>	
+	<li><a href="gallery.html">GALLERY</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+	<li><a href="login.html">LOGIN</a></li>
+	<li><a href="register.html">REGISTER</a></li>	
+	<li><a href="contact.html">CONTACT US</a></li>	
+   	</ul>
+  </center>
+</div>
+<center><h1><u>CONTACT US</u></h1>
+<div class="logiin"> 
+<form>	
+	<label>NAME</label>
+	<input type="text" name="name" placeholder="name" required>
+  
+	<label>EMAIL</label>
+	<input type="email" name="email" placeholder="email" required>
+    	
+	<label>PHONE NO</label>
+	<input type="number" name="phone" placeholder="phoneno" required>
+    
+	<label>CONTACT ADDRESS</label>
+	<textarea name="cont" placeholder="cont" rows="8" cols="22" required></textarea>
+    
+	<label>MESSAGE</label>
+	<textarea name="mess" placeholder="message" rows="8" cols="22" required></textarea>
+       <input type="submit" name="sub" value="SEND MESSAGE">
+</form>
+  </div>
+</center>
+</body>
+<p class="footer">copyrights@2021</p>
+</html>

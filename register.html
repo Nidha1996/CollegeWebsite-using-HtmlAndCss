@@ -1,0 +1,87 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="design.css">
+<style>
+div.register{
+	
+	margin-left:200px;
+	margin-right:200px;
+}
+input[type=text],input[type=password],input[type=email],input[type=number],input[type=date],textarea,select{
+	width:100%;
+	border:18px;
+	margin:8px 0px; 
+	padding: 12px 20px;
+	border-radius:22px;
+	border:2px solid red;	 
+}
+input[type=submit],input[type=reset]{
+	width:10%;
+	color:red;
+}
+</style>	
+</head>
+	<body><div class="head"><center><img src="../Images/logo1.jpg" width="600px" ></center></div>
+<div id="title">  
+  <center>   	
+	<ul class="nav">
+	<li><a href="homepage.html">HOME</a></li>	
+	<li><a href="gallery.html">GALLERY</a></li>
+	<li><a href="about.html">ABOUT</a></li>
+	<li><a href="login.html">LOGIN</a></li>
+	<li><a href="register.html">REGISTER</a></li>	
+	<li><a href="contact.html">CONTACT US</a></li>	
+   	</ul>
+  </center>
+</div>
+<center><h1><u>Registration</u></h1>   
+<div class="register">  
+ <form>
+		<label>NAME:</label>
+		<input type="text" name="txtname" placeholder="NAME" width=50px required>
+	
+		<label>GENDER:</label>
+		   <label>Male</label><input type="radio" name="rdbgender"  value="MALE" required>
+		   <label>Female</label> <input type="radio"  name="rdbgender" value="FEMALE" required>
+		<br><br>
+		<label>PHONE NO:</label>
+		<input type="number" name="txtcont" placeholder="phone no" required>
+	
+		<label>USERNAME:</label>
+		<input type="text" name="txtuser" placeholder="username" required>
+	
+		<label>DOB:</label>
+		<input type="date" name="date" placeholder="DOB" required>
+	
+		<label>PASSWORD:</label>
+		<input type="password" name="pass" placeholder="password" required>
+	
+		<label>RETRY PASSWORD:</label>
+		<input type="password" name="repass" placeholder="repassword" required>
+	
+		<label>PINCODE:</label>
+		<input type="number" name="txtpin" placeholder="pincode" required>
+	
+		<label>SECURITY QUESTION:</label>
+		<select value="secur" required>
+		  <option>-----Select-------</option>
+		<option value="pett">your favourite pet</option>
+		<option value="colo">your favourite color</option></td>
+		</select>
+	
+		<label>ANSWER:</label>
+		<input type="text" name="txtans" required> 
+		<label>ADDRESS:</label>
+		<td><textarea name="txtadd" placeholder="addresss" rows="10" cols="22"></textarea></td>
+	
+		<center><input type="checkbox" name="txtcond"  required>
+			Agree to Terms and Conditions</center>
+	
+		<input type="submit" name="submit" placeholder="submit" value="submit">
+		<input type="reset" name="cancel" placeholder="cancel" value="cancel">
+	
+ </form>
+</center>
+</body>
+<p class="footer">Copyrights@2021</p>
+</html>
