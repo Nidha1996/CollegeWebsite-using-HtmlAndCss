@@ -1,19 +1,23 @@
 body{
 	background-image:url("../images/pink.png");
-	backround-repeat:no-repeat;
+	background-repeat:no-repeat;
  	background-size:100% 100%;
-    	background-attachment: fixed;	
+    background-attachment: fixed;	
 }
 p,ul.colle{
-	text-indent:50px;
 	text-align:justify;
 	word-spacing:1px;
 	font-style:italic;
 	font-size:23;
-	margin-left:25px;
-	margin-right:25px;
 	}
-
+.row{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+.row .parag{
+	margin:0;
+}
 .footer{
 	color:black;
 	text-align:center;
@@ -29,9 +33,11 @@ h1{
 	text-shadow:2px 2px blue;
 }
 
-#title{
+.title{
 	background-color:lightblue;
 	height:10%;	
+	padding:0;
+	margin:0;
 }
 input:hover{
 	color:navy;
@@ -45,25 +51,25 @@ textarea:hover{
 	color:red;
 	background-color:lightblue;
 }
-
-
-ul.nav{
-	list-style-type: none;
-        margin:0;
-	padding:0;
-	
+.nav{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
+	list-style-type:none;
+	padding-top:20px;
+	margin:0;
 }
-.nav li{
-	float:left;
-	padding:10px;
-	margin-left:100px;
-	
-}
-li a{
+.nav li a{
 	text-decoration: none;
-	color:black;
-	
+	color:black;	
 }
 .nav li:hover{
 	background-color:red;
+}
+
+@media (max-width:991px){
+	.nav li a{
+		font-size: small;
+	}
+	
 }
